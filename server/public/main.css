@@ -12,6 +12,11 @@ h1 {
   font-size: 4em;
 }
 
+.slytherin-crest {
+  margin-top: 5px;
+  max-height: 70px
+}
+
 .articleContainer {
   padding-left: 10em;
   padding-bottom: 5em;
@@ -34,5 +39,5 @@ h1 {
 }
 
 .articleImageContainer{
-  
+
 }
