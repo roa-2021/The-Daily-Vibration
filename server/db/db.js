@@ -7,6 +7,12 @@ const getAllComments = (db = connection) => {
   return db('comment')
 }
 
+const addComment = (comment, db = connection) => {
+  console.log(comment)
+  return db('comment').insert(comment)
+}
+
 module.exports = {
   getAllComments,
+  addComment,
 }

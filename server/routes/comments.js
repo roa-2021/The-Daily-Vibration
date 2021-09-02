@@ -15,4 +15,17 @@ router.get('/', (req, res) => {
     })
 })
 
+router.post('/', (req, res) => {
+  const newComment = req.body
+  console.log(newComment)
+  res.json({ greeting: 'hi' })
+  // return db.addComment(newComment).then((ids) => {
+  //   return res.send('ok')
+  //   // return db.getCommentById(ids[0])
+  //   //   .then(comment => {
+  //   //     return res.json(comment)
+  //   //   })
+  // })
+})
+
 module.exports = router

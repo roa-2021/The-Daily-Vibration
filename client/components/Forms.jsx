@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import request from 'superagent'
+import { addComment } from '../apis/comments'
 
 const Form = () => {
   const [formObj, setDetails] = useState({ id: 0, name: '', comment: '' })
@@ -6,7 +8,7 @@ const Form = () => {
   const onSubmit = (e) => {
     e.preventDefault()
     setDetails({ ...formObj, id: formObj.id + 1 })
-    console.log(formObj)
+    addComment(formObj)
   }
 
   const onChange = (e) => {
