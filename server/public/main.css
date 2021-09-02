@@ -3,3 +3,7 @@ html, body {
   color: #28282e;
   font-family: 'Lato', sans-serif;
 }
+
+h1 {
+  font-family: 'UnifrakturMaguntia', cursive;
+}
