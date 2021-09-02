@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react'
 
 const Form = () => {
-
-    const [formObj,setDetails] = useState({id: 0,name: '' , comment: ''})
-
+    
+    const [formObj,setDetails] = useState({id: 0, name: '' , comment: ''})
+    var count = formObj.id;
     const onSubmit = (e) => {
         e.preventDefault()
+        setDetails({...formObj, id: formObj.id+1})
         console.log(formObj)
     }
 
     const onChange = (e) => {
-        //e.preventDefault()
-        //console.log(e.target.value)
+        console.log(e.target.value)
         setDetails({...formObj,[e.target.name]: e.target.value }) //the square part is saying get the name field value and put it here based on event trigger values from nam
     }
+
+ 
 
 const {id, name, comment} = formObj//this is destructuring
 
