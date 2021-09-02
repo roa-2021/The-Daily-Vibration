@@ -13,25 +13,24 @@ const News = () => {
     getNews().then((news) => setNews(news.data))
   }
 
+  console.log(News)
   return (
-    <div className='container-news'>
-      <div className='newsFeedContainer'>
+    <div className="container-news">
+      <div className="newsFeedContainer">
         {News.map((aNews) => {
           return (
-            <div key={aNews.uuid} className='articleContainer'>
+            <div key={aNews.uuid} className="articleContainer">
               <article>
-
-                <div className='news-column__left'>
-                  <img className='articleImage' src={aNews.image_url} />
+                <div className="news-column__left">
+                  <img className="articleImage" src={aNews.image_url} />
                 </div>
 
-                <div className='news-column__right'>
-                  <h2 className='articleTitle'>
-                    <Link to={aNews.url}>{aNews.title}</Link>
+                <div className="news-column__right">
+                  <h2 className="articleTitle">
+                    <a href={aNews.url}>{aNews.title}</a>
                   </h2>
-                  <p className='articleDescription'>{aNews.description}</p>
+                  <p className="articleDescription">{aNews.description}</p>
                 </div>
-
               </article>
             </div>
           )
