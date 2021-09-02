@@ -1,11 +1,27 @@
 html, body {
   padding: 0;
   margin: 0;
-  background-color: #eeebe4;
+  background-color: #ffff;
   color: #28282e;
   font-family: 'Lato', sans-serif;
 }
 
 h1 {
   font-family: 'UnifrakturMaguntia', cursive;
+  text-align: center;
+  font-size: 4em;
+}
+
+.articleContainer {
+  padding-left: 10em;
+  padding-bottom: 5em;
+}
+
+.articleTitle {
+  font-family: 'Newsreader', serif;
+  font-size: 1.5em;
+}
+
+.articleImage {
+  max-height: 350px;
 }
