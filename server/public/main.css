@@ -8,15 +8,27 @@ html, body {
 
 h1 {
   font-family: 'UnifrakturMaguntia', cursive;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 27px;
-  font-size: 4em;
+  font-size: 5vw;
   float: left;
+}
+
+h2{
+  
 }
 
 header {
   /* background-color: #ccc; */
   height: 120px;
+}
+
+p {
+  /* font-family: 'Newsreader', serif; */
+}
+
+a {
+  color: black;
 }
 
 .container-header, .newsFeedContainer {
@@ -28,7 +40,10 @@ header {
 
 .container-banner {
   float: left;
+  /* background-color: khaki; */
+  height: 100%;
   margin: auto;
+  width: auto;
 } 
 
 .container-news{
@@ -36,7 +51,7 @@ header {
 }
 
 .news-column__left {
-  /* background-color: blue; */
+  /* background-color: honeydew; */
   width: 32.8%;
   float: left;
 }
@@ -55,14 +70,9 @@ header {
 
 .slytherin-crest {
   padding-top: 20px;
-  max-height: 70px;
+  max-height: 6vw;
   display: block;
   float: left;
-}
-
-.slytherin-crest {
-  margin-top: 5px;
-  max-height: 70px
 }
 
 .articleContainer {
@@ -72,13 +82,21 @@ header {
   margin-top: 20px;
 }
 
+.articleImage {
+  width: 100%;
+  max-height: 100%;
+}
+
 .articleTitle {
   text-align: center;
   font-family: 'Newsreader', serif;
   font-size: 1.5em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.articleImage {
-  width: 100%;
-  max-height: 100%;
-  
+.articleDescription {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
