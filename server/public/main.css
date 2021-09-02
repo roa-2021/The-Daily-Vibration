@@ -15,12 +15,13 @@ h1 {
 }
 
 h2{
-  
+  font-family: 'Tinos', serif;
 }
 
 header {
   /* background-color: #ccc; */
   height: 120px;
+  margin-bottom: auto;
 }
 
 p {
