@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   background-color: #ffff;
@@ -19,7 +20,8 @@ header {
   height: 120px;
 }
 
-.container-header, .newsFeedContainer {
+.container-header,
+.newsFeedContainer {
   width: 67.2vw;
   height: 100%;
   /* background-color: #fff; */
@@ -29,10 +31,10 @@ header {
 .container-banner {
   float: left;
   margin: auto;
-} 
+}
 
-.container-news{
-/* background-color: #eee; */
+.container-news {
+  /* background-color: #eee; */
 }
 
 .news-column__left {
@@ -50,7 +52,7 @@ header {
 .container-comment-form {
   /* background-color: #eee; */
   height: 120px;
-  display: none;
+  /* display: none; */
 }
 
 .slytherin-crest {
@@ -62,7 +64,7 @@ header {
 
 .slytherin-crest {
   margin-top: 5px;
-  max-height: 70px
+  max-height: 70px;
 }
 
 .articleContainer {
@@ -81,4 +83,4 @@ header {
 .articleImage {
   width: 100%;
   max-height: 100%;
-  
+}
