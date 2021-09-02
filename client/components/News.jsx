@@ -31,11 +31,11 @@ const News = () => {
                   </h2>
                   <p className='articleDescription'>{aNews.description}</p>
                   <div className='date-source-container'>
-                    <div className='date-container'>
-                      <p className='articleDate'>Date:{aNews.published_at}</p>
-                    </div>
                     <div className='source-container'>
                       <p className='source'>Source: {aNews.source}</p>
+                    </div>
+                    <div className='date-container'>
+                      <p className='articleDate'>Date:{aNews.published_at}</p>
                     </div>
                   </div>
                 </div>
