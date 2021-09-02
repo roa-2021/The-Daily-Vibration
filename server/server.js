@@ -8,8 +8,8 @@ server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 // server.use(cors('*'))
 
-const fruitRoutes = require('./routes/fruit')
+const commentRoutes = require('./routes/comments')
 
-server.use('/api/v1/fruit', fruitRoutes)
+server.use('/api/v1/comment', commentRoutes)
 
 module.exports = server

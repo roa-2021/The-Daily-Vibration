@@ -12,7 +12,6 @@ const News = () => {
     getNews().then((news) => setNews(news.data))
   }
 
-  console.log(News)
   return (
     <div className="container-news">
       <div className="newsFeedContainer">

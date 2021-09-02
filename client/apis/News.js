@@ -3,7 +3,6 @@ import request from 'superagent'
 const url = 'https://api.thenewsapi.com/v1/news/top?api_token=ASxRg3pkGB5dMPv7ALh6lpzPxMGgxm8ePBrM84wE&language=en&categories='
 
 export const getNews = () => {
-  return request
     .get(`${url}entertainment`)
     .then(response => {
       return response.body
