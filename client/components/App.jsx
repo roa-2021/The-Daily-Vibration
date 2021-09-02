@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Fruit from './Fruit'
+import News from './News'
 
 const App = () => {
   return (
     <>
-      <h1>Hola! Fruit time!</h1>
-      <Fruit />
+      <h1>The Daily Vibration</h1>
+      <News />
     </>
   )
 }
