@@ -29,7 +29,10 @@ const News = () => {
                   <h2 className="articleTitle">
                     <a href={aNews.url}>{aNews.title}</a>
                   </h2>
-                  <p className="articleDescription">{aNews.description}</p>
+                  <p className='articleDate'>Date:{aNews.published_at}</p>
+                  <p className='snippet'>Snippet:{aNews.snippet}</p>
+                  <p className='source'>Source:{aNews.source}</p>
+                  <p className="articleDescription">Description:{aNews.description}</p>
                 </div>
               </article>
             </div>
