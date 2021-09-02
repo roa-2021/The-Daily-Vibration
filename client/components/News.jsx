@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import { getNews } from '../apis/News'
 
 const News = () => {
@@ -21,7 +21,9 @@ const News = () => {
         {News.map(aNews => {
           return (
           <>
-          <li key={aNews.uuid}>{aNews.title}</li>    
+          <li key={aNews.uuid}><Link to={aNews.url}>{aNews.title}</Link></li> 
+          <p>{aNews.description}</p>
+          <img src={aNews.image_url}/>
           </>
           )
         })}
