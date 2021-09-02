@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { getNews } from '../apis/News'
-
-const News = () => {
+import { getFoodNews,getTechNews,getHealthNews,getBusinessNews,getPoliticsNews } from '../apis/News'
+const Other = (props) => {
+  // return (
+  //   <p>{props.match.params.id}</p>
+  // )
   const [News, setNews] = useState([])
 
   useEffect(() => {
@@ -9,9 +11,27 @@ const News = () => {
   }, [])
 
   const refreshNews = () => {
-    getNews().then((news) => setNews(news.data))
+      if(props.match.params.id==='food')
+      {
+      return getFoodNews().then((news) => setNews(news.data))
+      }
+     else if(props.match.params.id==='health')
+      {
+      return getHealthNews().then((news) => setNews(news.data))
+      }
+      else if(props.match.params.id==='politics')
+      {
+      return getPoliticsNews().then((news) => setNews(news.data))
+      }
+      else if(props.match.params.id==='business')
+      {
+      return getBusinessNews().then((news) => setNews(news.data))
+      }
+      else if(props.match.params.id==='tech')
+      {
+      return getTechNews().then((news) => setNews(news.data))
+      }
   }
-
   return (
     <div className="container-news">
       <div className="newsFeedContainer">
@@ -41,4 +61,4 @@ const News = () => {
   )
 }
 
-export default News
+export default Other
