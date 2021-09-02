@@ -1,5 +1,149 @@
-html, body {
-  background-color: #eeebe4;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffff;
   color: #28282e;
   font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'UnifrakturMaguntia', cursive;
+  /* text-align: center; */
+  margin-top: 27px;
+  font-size: 5vw;
+  float: left;
+}
+
+h2{
+  /* font-family: 'Playfair Display', serif; */
+}
+
+header {
+  background-color: #ccc;
+  height: 120px;
+  margin-bottom: auto;
+}
+
+
+.container-header,
+.newsFeedContainer {
+
+}
+
+p {
+  font-family: 'Newsreader', serif;
+  font-size: 1.25vw;
+}
+
+a {
+  color: black;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5vw;
+}
+
+nav {
+  background-color: darkturquoise;
+}
+
+.nav-item-container {
+
+}
+
+.container-header, .newsFeedContainer {
+
+  width: 67.2vw;
+  height: 100%;
+  background-color: #fff;
+  margin: auto;
+}
+
+.container-banner {
+  float: left;
+  background-color: khaki;
+  height: 100%;
+  margin: auto;
+
+  width: auto;
+} 
+
+
+.container-news{
+  background-color: #eee;
+}
+
+.news-column__left {
+  background-color: honeydew;
+  width: 32.8%;
+  float: left;
+}
+
+.news-column__right {
+  background-color: wheat;
+  width: 67.2%;
+  float: left;
+  height: 100%
+}
+
+.container-comment-form {
+  background-color: #eee;
+  height: 120px;
+}
+
+.slytherin-crest {
+  padding-top: 20px;
+  max-height: 6vw;
+  display: block;
+  float: left;
+}
+
+.slytherin-crest {
+  margin-top: 5px;
+  max-height: 70px;
+}
+
+.articleContainer {
+  padding-bottom: 5em;
+  height: 32.8vh;
+  background-color: #aaa;
+  margin-top: 20px;
+}
+
+.articleImage {
+  width: 100%;
+  max-height: 100%;
+}
+
+.articleTitle {
+  text-align: center;
+  font-family: 'Newsreader', serif;
+  font-size: 1.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.articleImage {
+  width: 100%;
+  max-height: 100%;
+}
+
+.articleDescription {
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.date-source-container {
+  background-color: cornsilk;
+}
+
+.date-container{
+  background-color: cyan;
+  float: left;  
+}
+
+.source-container{
+  background-color:darksalmon;
+  float: left;
 }
