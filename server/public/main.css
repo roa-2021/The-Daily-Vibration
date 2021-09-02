@@ -60,6 +60,11 @@ header {
   float: left;
 }
 
+.slytherin-crest {
+  margin-top: 5px;
+  max-height: 70px
+}
+
 .articleContainer {
   padding-bottom: 5em;
   height: 32.8vh;
@@ -76,4 +81,4 @@ header {
 .articleImage {
   width: 100%;
   max-height: 100%;
-}
+  
