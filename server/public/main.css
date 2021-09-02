@@ -15,13 +15,24 @@ h1 {
 .articleContainer {
   padding-left: 10em;
   padding-bottom: 5em;
+  border: rgb(3, 2, 2);
+  border-width: 2px;
 }
 
 .articleTitle {
+  text-align: center;
   font-family: 'Newsreader', serif;
   font-size: 1.5em;
 }
 
 .articleImage {
   max-height: 350px;
+}
+
+.articleDescriptionContainer{
+
+}
+
+.articleImageContainer{
+  
 }
