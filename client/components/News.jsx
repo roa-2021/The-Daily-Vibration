@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { getNews } from '../apis/News'
 
 const News = () => {
@@ -13,7 +12,6 @@ const News = () => {
     getNews().then((news) => setNews(news.data))
   }
 
-  console.log(News)
   return (
     <div className='container-news'>
       <div className='newsFeedContainer'>
