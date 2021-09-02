@@ -14,25 +14,39 @@ const Form = () => {
     setDetails({ ...formObj, [e.target.name]: e.target.value }) // the square part is saying get the name field value and put it here based on event trigger values from nam
   }
 
-  const { id, name, comment } = formObj// this is destructuring
+  const { id, name, comment } = formObj // this is destructuring
 
   return (
     <div className="container-comment-form">
       <form onSubmit={onSubmit} key={id}>
         <div>
           <label htmlFor="name">name: </label>
-          <input name="name" id="name" type="text" value={name} placeholder="eg Michael" onChange={onChange}></input>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            value={name}
+            placeholder="eg Michael"
+            onChange={onChange}
+          ></input>
         </div>
         <div>
           <label htmlFor="comment">comment: </label>
-          <input name="comment" id="comment" size="50"type="text" value={comment} placeholder="eg I don't like that news update" onChange={onChange}></input>
+          <input
+            name="comment"
+            id="comment"
+            size="50"
+            type="text"
+            value={comment}
+            placeholder="eg I don't like that news update"
+            onChange={onChange}
+          ></input>
         </div>
         <div>
           <button>submit me</button>
         </div>
       </form>
     </div>
-
   )
 }
 

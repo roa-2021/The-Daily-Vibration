@@ -4,11 +4,12 @@ const router = express.Router()
 const db = require('../db/db')
 
 router.get('/', (req, res) => {
-  return db.getAllFruit()
-    .then(fruit => {
-      return res.json(fruit)
+  return db
+    .getAllComments()
+    .then((comment) => {
+      return res.json(comment)
     })
-    .catch(err => {
+    .catch((err) => {
       console.log(err.message)
       return res.status(500).send('500 error :(')
     })
