@@ -15,7 +15,7 @@ h1 {
 }
 
 h2{
-  font-family: 'Tinos', serif;
+  /* font-family: 'Playfair Display', serif; */
 }
 
 header {
@@ -25,11 +25,14 @@ header {
 }
 
 p {
-  /* font-family: 'Newsreader', serif; */
+  font-family: 'Newsreader', serif;
+  font-size: 1.25vw;
 }
 
 a {
   color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5vw;
 }
 
 .container-header, .newsFeedContainer {
@@ -48,7 +51,7 @@ a {
 } 
 
 .container-news{
-/* background-color: #eee; */
+  /* background-color: #eee; */
 }
 
 .news-column__left {
@@ -99,5 +102,5 @@ a {
 .articleDescription {
   padding-left: 20px;
   padding-right: 20px;
-
+  
 }
