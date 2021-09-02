@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { Route } from 'react-router'
 import News from './News'
 
 const App = () => {
   return (
     <>
       <h1>The Daily Vibration</h1>
-      <News />
+      <Route path='/' component={News}/>
     </>
   )
 }
