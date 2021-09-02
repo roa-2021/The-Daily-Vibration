@@ -1,5 +1,11 @@
 html, body {
+  padding: 0;
+  margin: 0;
   background-color: #eeebe4;
   color: #28282e;
   font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'UnifrakturMaguntia', cursive;
 }
