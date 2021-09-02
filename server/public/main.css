@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   background-color: #ffff;
@@ -23,15 +24,22 @@ header {
   height: 120px;
 }
 
+
+.container-header,
+.newsFeedContainer {
+
+}
+
 p {
   /* font-family: 'Newsreader', serif; */
 }
 
 a {
   color: black;
-}
+  }
 
 .container-header, .newsFeedContainer {
+
   width: 67.2vw;
   height: 100%;
   /* background-color: #fff; */
@@ -43,11 +51,13 @@ a {
   /* background-color: khaki; */
   height: 100%;
   margin: auto;
+
   width: auto;
 } 
 
-.container-news{
-/* background-color: #eee; */
+
+.container-news {
+  /* background-color: #eee; */
 }
 
 .news-column__left {
@@ -65,7 +75,7 @@ a {
 .container-comment-form {
   /* background-color: #eee; */
   height: 120px;
-  display: none;
+  /* display: none; */
 }
 
 .slytherin-crest {
@@ -73,6 +83,11 @@ a {
   max-height: 6vw;
   display: block;
   float: left;
+}
+
+.slytherin-crest {
+  margin-top: 5px;
+  max-height: 70px;
 }
 
 .articleContainer {
@@ -93,6 +108,11 @@ a {
   font-size: 1.5em;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.articleImage {
+  width: 100%;
+  max-height: 100%;
 }
 
 .articleDescription {
