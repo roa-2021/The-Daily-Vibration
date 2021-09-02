@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { getNews } from '../apis/News'
 
 const News = () => {
-
   const [News, setNews] = useState([])
 
   useEffect(() => {
@@ -15,21 +14,30 @@ const News = () => {
       .then(news => setNews(news.data))
   }
 
-  return(
+  return (
     <>
       <ul>
         {News.map(aNews => {
           return (
-          <>
-          <li key={aNews.uuid}><Link to={aNews.url}>{aNews.title}</Link></li> 
-          <p>{aNews.description}</p>
-          <img src={aNews.image_url}/>
-          </>
+            <div className='articleContainer'>
+
+              <div className='articleTitle' key={aNews.uuid}><Link to={aNews.url}>{aNews.title}</Link>
+              </div>
+
+              <div className='articleDescriptionContainer'>
+                <p className='articleDescription'>{aNews.description}</p>
+              </div>
+
+              <div className='articleImageContainer'>
+                <img className='articleImage' src={aNews.image_url}/>
+              </div>
+
+            </div>
           )
         })}
       </ul>
     </>
-)
+  )
 }
 
 export default News
