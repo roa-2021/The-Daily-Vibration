@@ -9,7 +9,7 @@ const App = () => {
       <header>
         <div className='container-header'>
           <div className='container-banner'>
-            <img className='sqlytherin-crest' src='/images/slytherin_crest.png' />
+            <img className='slytherin-crest' src='/images/slytherin_crest.png' />
             <h1>The Daily Vibration</h1>
             <img className='slytherin-crest' src='/images/slytherin_crest.png' />
           </div>
