@@ -10,33 +10,34 @@ const News = () => {
   }, [])
 
   const refreshNews = () => {
-    getNews()
-      .then(news => setNews(news.data))
+    getNews().then((news) => setNews(news.data))
   }
 
   return (
-    <>
+    <div className='container-news'>
       <div className='newsFeedContainer'>
-        {News.map(aNews => {
+        {News.map((aNews) => {
           return (
             <div key={aNews.uuid} className='articleContainer'>
+              <article>
 
-              <div className='articleTitle'><Link to={aNews.url}>{aNews.title}</Link>
-              </div>
+                <div className='news-column__left'>
+                  <img className='articleImage' src={aNews.image_url} />
+                </div>
 
-              <div className='articleImageContainer'>
-                <img className='articleImage' src={aNews.image_url}/>
-              </div>
+                <div className='news-column__right'>
+                  <h2 className='articleTitle'>
+                    <Link to={aNews.url}>{aNews.title}</Link>
+                  </h2>
+                  <p className='articleDescription'>{aNews.description}</p>
+                </div>
 
-              <div className='articleDescriptionContainer'>
-                <p className='articleDescription'>{aNews.description}</p>
-              </div>
-
+              </article>
             </div>
           )
         })}
       </div>
-    </>
+    </div>
   )
 }
 
