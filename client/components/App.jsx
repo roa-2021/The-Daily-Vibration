@@ -13,6 +13,13 @@ const App = () => {
             <h1>The Daily Vibration</h1>
             <img className='slytherin-crest' src='/images/slytherin_crest.png' />
           </div>
+          <nav>
+            <div className='nav-item-container'>Business</div>
+            <div className='nav-item-container'>Tech</div>
+            <div className='nav-item-container'>Politics</div>
+            <div className='nav-item-container'>Food</div>
+            <div className='nav-item-container'>Health</div>
+          </nav>
         </div>
       </header>
       <Forms />
