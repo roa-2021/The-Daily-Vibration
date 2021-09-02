@@ -19,9 +19,9 @@ const News = () => {
       <ul>
         {News.map(aNews => {
           return (
-            <div className='articleContainer'>
+            <div key={aNews.uuid} className='articleContainer'>
 
-              <div className='articleTitle' key={aNews.uuid}><Link to={aNews.url}>{aNews.title}</Link>
+              <div className='articleTitle'><Link to={aNews.url}>{aNews.title}</Link>
               </div>
 
               <div className='articleDescriptionContainer'>
