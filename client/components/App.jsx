@@ -21,27 +21,19 @@ const App = () => {
             />
           </div>
           <nav>
-            <div className='nav-item-container'>
-              <Link to='/news/business'>Business</Link>
-            </div>
-            <div className='nav-item-container'>
-              <Link to='/news/tech'>Tech</Link>
-            </div>
-            <div className='nav-item-container'>
-              <Link to='/news/politics'>Politics</Link>
-            </div>
-            <div className='nav-item-container'>
-              <Link to='/news/food'>Food</Link>
-            </div>
-            <div className='nav-item-container'>
-              <Link to='/news/health'>Health</Link>
-            </div>
+            <Link to='/news/business'>Business</Link>
+            <Link to='/news/tech'>Tech</Link>
+            <Link to='/news/politics'>Politics</Link>
+            <Link to='/news/food'>Food</Link>
+            <Link to='/news/health'>Health</Link>
           </nav>
         </div>
       </header>
-      <Route path='/' component={Forms} />
-      <Route exact path='/' component={News} />
-      <Route exact path='/news/:id' component={Other} />
+      <div className="container-main">
+        <Route path='/' component={Forms} />
+        <Route exact path='/' component={News} />
+        <Route exact path='/news/:id' component={Other} />
+      </div>
     </>
   )
 }

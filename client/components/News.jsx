@@ -22,22 +22,11 @@ const News = () => {
                 <div className='news-column__left'>
                   <img className='articleImage' src={aNews.image_url} />
                 </div>
-
                 <div className='news-column__right'>
-                  <h2 className='articleTitle'>
-                    <a href={aNews.url}>{aNews.title}</a>
-                  </h2>
-                  <p className='articleDescription'>{aNews.description}</p>
-                  <div className='date-source-container'>
-                    <div className='source-container'>
-                      <p className='source'>Source: {aNews.source}</p>
-                    </div>
-                    <div className='date-container'>
-                      <p className='articleDate'>Date:{aNews.published_at}</p>
-                    </div>
-                  </div>
+                  <p className='source'>{aNews.source}</p>
+                  <a className='articleTitle' href={aNews.url}>{aNews.title}</a>
+                  <p className='articleDescription'>{aNews.snippet}</p>
                 </div>
-                {/* <p className='snippet'>Snippet:{aNews.snippet}</p> */}
               </article>
             </div>
           )
