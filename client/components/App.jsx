@@ -1,9 +1,8 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import News from './News'
 import Forms from './Forms'
 import Other from './Other'
-import {Link} from 'react-router-dom'
 
 const App = () => {
   return (
@@ -11,24 +10,35 @@ const App = () => {
       <header>
         <div className='container-header'>
           <div className='container-banner'>
-            <img className='slytherin-crest' src='/images/slytherin_crest.png' />
+            <img
+              className='slytherin-crest'
+              src='/images/slytherin_crest.png'
+            />
             <h1>The Daily Vibration</h1>
-            <img className='slytherin-crest' src='/images/slytherin_crest.png' />
+            <img
+              className='slytherin-crest'
+              src='/images/slytherin_crest.png'
+            />
           </div>
           <nav>
-            <div className='nav-item-container'>Business</div>
-            <div className='nav-item-container'>Tech</div>
-            <div className='nav-item-container'>Politics</div>
-            <div className='nav-item-container'>Food</div>
-            <div className='nav-item-container'>Health</div>
+            <div className='nav-item-container'>
+              <Link to='/news/business'>Business</Link>
+            </div>
+            <div className='nav-item-container'>
+              <Link to='/news/tech'>Tech</Link>
+            </div>
+            <div className='nav-item-container'>
+              <Link to='/news/politics'>Politics</Link>
+            </div>
+            <div className='nav-item-container'>
+              <Link to='/news/food'>Food</Link>
+            </div>
+            <div className='nav-item-container'>
+              <Link to='/news/health'>Health</Link>
+            </div>
           </nav>
         </div>
       </header>
-      <Link to='/news/business'>Business</Link>
-      <Link to='/news/tech'>Tech</Link>
-      <Link to='/news/politics'>Politics</Link>
-      <Link to='/news/food'>Food</Link>
-      <Link to='/news/health'>Health</Link>
       <Route path='/' component={Forms} />
       <Route exact path='/' component={News} />
       <Route exact path='/news/:id' component={Other} />
