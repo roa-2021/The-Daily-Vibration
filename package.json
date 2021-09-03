@@ -7,8 +7,8 @@
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon server",
-    "build": "npm run webpack",
+    "start": "node server",
+    "build": "webpack",
     "dev": "run-p dev:client dev:server",
     "dev:client": "npm run webpack -- --watch",
     "dev:server": "nodemon server",
