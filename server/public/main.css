@@ -25,12 +25,6 @@ header {
   margin-bottom: auto;
 }
 
-
-.container-header,
-.newsFeedContainer {
-
-}
-
 p {
   font-family: 'Newsreader', serif;
   font-size: 1.25vw;
@@ -45,9 +39,12 @@ a {
 
 nav {
   background-color: darkturquoise;
+  display: block
 }
 
 .nav-item-container {
+  display: inline-block;
+  margin: 1vw;
 
 }
 
@@ -64,7 +61,6 @@ nav {
   background-color: khaki;
   height: 100%;
   margin: auto;
-
   width: auto;
 } 
 
@@ -89,6 +85,7 @@ nav {
 .container-comment-form {
   background-color: #eee;
   height: 120px;
+  display: none;
 }
 
 .slytherin-crest {
@@ -96,11 +93,6 @@ nav {
   max-height: 6vw;
   display: block;
   float: left;
-}
-
-.slytherin-crest {
-  margin-top: 5px;
-  max-height: 70px;
 }
 
 .articleContainer {
@@ -121,11 +113,6 @@ nav {
   font-size: 1.5em;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.articleImage {
-  width: 100%;
-  max-height: 100%;
 }
 
 .articleDescription {
