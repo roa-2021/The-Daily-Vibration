@@ -1,14 +1,14 @@
 {
-  "name": "boilerplate-react-knex",
-  "version": "0.0.1",
-  "description": "A React and knex starter",
+  "name": "the-daily-vibration",
+  "version": "1.0.0",
+  "description": "news",
   "repository": "https://github.com/dev-academy-challenges/boilerplate-react-knex.git",
   "main": "server/index.js",
-  "author": "EDA",
+  "author": "Max,Kang,Tho,Phill",
   "license": "ISC",
   "scripts": {
     "start": "node server",
-    "build": "webpack",
+    "build": "npm run webpack",
     "dev": "run-p dev:client dev:server",
     "dev:client": "npm run webpack -- --watch",
     "dev:server": "nodemon server",
@@ -41,11 +41,12 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "knex": "^0.95.4"
+    "knex": "^0.95.4",
+    "pg": "^8.7.1"
   },
   "engines": {
     "node": "14.17.4"
-},
+  },
   "devDependencies": {
     "@babel/core": "7.13.1",
     "@babel/plugin-proposal-class-properties": "7.13.0",
