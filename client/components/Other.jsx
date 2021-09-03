@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { getFoodNews,getTechNews,getHealthNews,getBusinessNews,getPoliticsNews } from '../apis/News'
+
+
 const Other = (props) => {
   // return (
   //   <p>{props.match.params.id}</p>
   // )
   const [News, setNews] = useState([])
-
   useEffect(() => {
     refreshNews()
   }, [])
 
+  useEffect(()=>{
+    refreshNews()
+  },[props.match.params.id])
+  
   const refreshNews = () => {
       if(props.match.params.id==='food')
       {
