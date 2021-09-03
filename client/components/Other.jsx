@@ -44,18 +44,13 @@ const Other = (props) => {
           return (
             <div key={aNews.uuid} className="articleContainer">
               <article>
-                <div className="news-column__left">
-                  <img className="articleImage" src={aNews.image_url} />
+                <div className='news-column__left'>
+                  <img className='articleImage' src={aNews.image_url} />
                 </div>
-
-                <div className="news-column__right">
-                  <h2 className="articleTitle">
-                    <a href={aNews.url}>{aNews.title}</a>
-                  </h2>
-                  <p className='articleDate'>Date:{aNews.published_at}</p>
-                  <p className='snippet'>Snippet:{aNews.snippet}</p>
-                  <p className='source'>Source:{aNews.source}</p>
-                  <p className="articleDescription">Description:{aNews.description}</p>
+                <div className='news-column__right'>
+                  <p className='source'>{aNews.source}</p>
+                  <a className='articleTitle' href={aNews.url}>{aNews.title}</a>
+                  <p className='articleDescription'>{aNews.snippet}</p>
                 </div>
               </article>
             </div>
