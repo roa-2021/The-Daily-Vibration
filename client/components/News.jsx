@@ -33,7 +33,8 @@ const News = () => {
                       <p className='source'>Source: {aNews.source}</p>
                     </div>
                     <div className='date-container'>
-                      <p className='articleDate'>Date:{aNews.published_at}</p>
+                      {/* <p className='articleDate'>{aNews.published_at}</p> */}
+                      {/* {console.log(aNews.published_at)} */}
                     </div>
                   </div>
                 </div>
