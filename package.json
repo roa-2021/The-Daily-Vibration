@@ -7,7 +7,7 @@
   "author": "EDA",
   "license": "ISC",
   "scripts": {
-    "start": "node server",
+    "start": "nodemon server",
     "build": "npm run webpack",
     "dev": "run-p dev:client dev:server",
     "dev:client": "npm run webpack -- --watch",
@@ -43,6 +43,9 @@
     "express": "^4.17.1",
     "knex": "^0.95.4"
   },
+  "engines": {
+    "node": "14.17.4"
+},
   "devDependencies": {
     "@babel/core": "7.13.1",
     "@babel/plugin-proposal-class-properties": "7.13.0",
